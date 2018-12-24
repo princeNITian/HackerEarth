@@ -1,0 +1,37 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+   
+   int T,N;
+   cin>>T;
+   for(int i=0;i<T;i++){
+       cin>>N;
+       int row=N/12;
+       int temp=N%12;
+       int val=13-temp;
+       int seat_no=row*12+val;
+       cout<<seat_no<<" ";
+       switch(val) {
+           case 1: cout<<"WS"; break;
+           case 2: cout<<"MS"; break;
+           case 3: cout<<"AS"; break;
+           case 4: cout<<"AS"; break;
+           case 5: cout<<"MS"; break;
+           case 6: cout<<"WS"; break;
+           case 7: cout<<"WS"; break;
+           case 8: cout<<"MS"; break;
+           case 9: cout<<"AS"; break;
+           case 10: cout<<"AS"; break;
+           case 11: cout<<"MS"; break;
+           case 12: cout<<"WS"; break;
+           
+           default:
+           break;
+       }
+       cout<<endl;
+       
+   }
+}
